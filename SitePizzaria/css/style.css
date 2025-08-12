@@ -1,0 +1,59 @@
+.carousel-caption {
+    right: 12% !important;
+    left: 50% !important;
+    /* vw = medida que considera a largura disponível da tela em % */
+    top: 13vw !important;
+    text-align: right !important;
+}
+
+
+@media (max-width:999px) {
+    .carousel-caption h1 span {
+        font-size: 5.5vw !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 4.8vw !important
+    }
+
+    .carousel-caption P {
+        font-size: 3vw !important;
+    }
+
+}
+
+.img-h1 {
+    height: 1.35rem + 1.5vw !important;
+}
+
+.img-h2 {
+    height: 80vh !important;
+}
+
+.selo {
+    bottom: -50px !important;
+    left: -40px !important;
+}
+
+.font-irish {
+    font-family: "Irish Grover", cursive, system-ui !important;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-family: "Irish Grover", cursive, system-ui;
+    font-weight: 500;
+}
+
+.carousel-caption h1 span {
+    font-size: 5rem;
+    text-shadow: 3px 5px 5px grey;
+}
+
+.texto-vermelho {
+    color: rgb(255, 0, 0);
+}
+
+.texto-verde {
+    color: rgb(9, 107, 50);
+}
