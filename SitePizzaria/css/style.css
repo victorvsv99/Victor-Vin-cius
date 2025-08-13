@@ -50,10 +50,38 @@
     text-shadow: 3px 5px 5px grey;
 }
 
+.pizza-menu:hover{
+    background-color: white;
+    box-shadow: var(--bs-box-shadow) !important;
+}
+
 .texto-vermelho {
     color: rgb(255, 0, 0);
 }
 
 .texto-verde {
     color: rgb(9, 107, 50);
+}
+
+.shadow-verde {
+    box-shadow: 1px 5px 8px rgba(0, 128, 0, 0.7)
+    /* Verde */
+}
+
+.shadow-vermelho {
+    box-shadow: 1px 5px 8px rgba(255, 0, 0, 0.6);
+    /* Vermelho */
+}
+
+.shadow-cinza {
+    box-shadow: 1px 5px 8px rgba(100, 100, 100, 0.6);
+    /* Cinza suave */
+}
+
+.img-pizza{
+    filter: grayscale(100%);
+}
+
+.img-pizza:hover{
+    filter: grayscale(0);
 }

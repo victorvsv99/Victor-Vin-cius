@@ -19,7 +19,7 @@
 
 <body>
     <!--  Barra de navegação  -->
-    <nav class="navbar navbar-expand-lg py-0 fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg py-0 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand pt-0 ps-4" href="index.html">
                 <img src="./img/logotipos/logotipo_menu.png" alt="" height="80">
@@ -122,11 +122,14 @@
             </div>
         </div>
     </section>
+    <!-- Cardapio -->
     <section id="cardapio" class="mt-5 container-fluid bg-body-tertiary">
         <div class="row">
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">
+            <!-- Pizza 1 -->
+            <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
                 <div class="my-5 p-4">
-                    <img class="img-fluid px-4" src="./img/cardapio/pizza_italiana.png" alt="primeira pizza">
+                    <img class="img-fluid img-pizza px-4" src="./img/cardapio/pizza_italiana_color.png"
+                        alt="primeira pizza">
                     <div class="text-center mt-3">
                         <h5 class="font-irish">Pizza Italiana</h5>
                         <p class="font-monospace">Muzzarela, champignon, azeitona, e tomate.</p>
@@ -138,26 +141,252 @@
                             <div class="col">
                                 <hr>
                             </div>
-
                         </div>
+                        <ul class="list-group text-start shadow">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-verde">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value=""
+                                        id="pizza1P" checked>
+                                    <label class="form-check-label font-monospace" for="pizza1P">22cm P</label>
+                                </div>
+                                <div>R$30,00</div>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-cinza">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value=""
+                                        id="pizza1M">
+                                    <label class="form-check-label font-monospace" for="pizza1M">29cm M</label>
+                                </div>
+                                <div>R$40,00</div>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-vermelho">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza1" value=""
+                                        id="pizza1G">
+                                    <label class="form-check-label font-monospace" for="pizza1G">35cm G</label>
+                                </div>
+                                <div>R$50,00</div>
+
+                            </li>
+                        </ul>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-lg font-irish mt-1 w-100" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Adicionar
+                        </button>
+
+                        </b></button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">coluna 2</div>
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">coluna 3</div>
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">coluna 4</div>
+            <!-- Pizza 2 -->
+            <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
+                <div class="my-5 p-4">
+                    <img class="img-fluid img-pizza px-4" src="./img/cardapio/pizza_marguerita_color.png"
+                        alt="primeira pizza">
+                    <div class="text-center mt-3">
+                        <h5 class="font-irish">Pizza Marguerita</h5>
+                        <p class="font-monospace">Muzzarela, Mangericão, azeitona, e tomate.</p>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-bold">Tamanhos</div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
+                        <ul class="list-group text-start shadow">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-verde">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza2" value=""
+                                        id="pizza2P" checked>
+                                    <label class="form-check-label font-monospace" for="pizza2P">22cm P</label>
+                                </div>
+                                <div>R$30,00</div>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-cinza">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza2" value=""
+                                        id="pizza2M">
+                                    <label class="form-check-label font-monospace" for="pizza2M">29cm M</label>
+                                </div>
+                                <div>R$40,00</div>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-vermelho">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza2" value=""
+                                        id="pizza2G">
+                                    <label class="form-check-label font-monospace" for="pizza2G">35cm G</label>
+                                </div>
+                                <div>R$50,00</div>
+
+                            </li>
+                        </ul>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-lg font-irish mt-1 w-100" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Adicionar
+                        </button>
+
+                        </b></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Pizza 3 -->
+            <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
+                <div class="my-5 p-4">
+                    <img class="img-fluid img-pizza px-4" src="./img/cardapio/pizza_pepperoni_color.png"
+                        alt="primeira pizza">
+                    <div class="text-center mt-3">
+                        <h5 class="font-irish">Pizza Pepperoni</h5>
+                        <p class="font-monospace">Muzzarela, Pepperoni, azeitona, e tomate.</p>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-bold">Tamanhos</div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
+                        <ul class="list-group text-start shadow">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-verde">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza3" value=""
+                                        id="pizza3P" checked>
+                                    <label class="form-check-label font-monospace" for="pizza3P">22cm P</label>
+                                </div>
+                                <div>R$30,00</div>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-cinza">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza3" value=""
+                                        id="pizza3M">
+                                    <label class="form-check-label font-monospace" for="pizza3M">29cm M</label>
+                                </div>
+                                <div>R$40,00</div>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-vermelho">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza3" value=""
+                                        id="pizza3G">
+                                    <label class="form-check-label font-monospace" for="pizza3G">35cm G</label>
+                                </div>
+                                <div>R$50,00</div>
+
+                            </li>
+                        </ul>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-lg font-irish mt-1 w-100" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Adicionar
+                        </button>
+
+                        </b></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Pizza 4 -->
+            <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
+                <div class="my-5 p-4">
+                    <img class="img-fluid img-pizza px-4" src="./img/cardapio/pizza_vegetariana_color.png"
+                        alt="primeira pizza">
+                    <div class="text-center mt-3">
+                        <h5 class="font-irish">Pizza Vegetariana</h5>
+                        <p class="font-monospace">Ervas finas, azeitona, mato e tomate.</p>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-bold">Tamanhos</div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
+                        <ul class="list-group text-start shadow">
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-verde">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza4" value=""
+                                        id="pizza4P" checked>
+                                    <label class="form-check-label font-monospace" for="pizza4P">22cm P</label>
+                                </div>
+                                <div>R$30,00</div>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-cinza">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza4" value=""
+                                        id="pizza4M">
+                                    <label class="form-check-label font-monospace" for="pizza4M">29cm M</label>
+                                </div>
+                                <div>R$40,00</div>
+                            </li>
+                            <li class="list-group-item bg-transparent d-flex justify-content-between shadow-vermelho">
+                                <div>
+                                    <input class="form-check-input me-1" type="radio" name="pizza4" value=""
+                                        id="pizza4G">
+                                    <label class="form-check-label font-monospace" for="pizza4G">35cm G</label>
+                                </div>
+                                <div>R$50,00</div>
+
+                            </li>
+                        </ul>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-lg font-irish mt-1 w-100" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Adicionar
+                        </button>
+
+                        </b></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
     </section>
+    <section>
+        <div class="container bg-transparent mt-2">
+            <h1 class="text-center font-irish">Nossos Produtos <img class="img-h1" src="./img/logotipos/italy.png"
+                    alt="imagem da bandeira da italia"></h1>
+            <div class="row">
+                <div class="col-12">
+                    <img src="./img/index/toldo.png" class="img-fluid" alt="foto de um toldo">
+                </div>
+                <div class="col-mb-6 col-4">
+                    <img src="./img/index/vegetais.png" alt="foto de vegetais" class="img-fluid" style="width: 420px;">
+                </div>
+                <div class="col-mb-6 col-4 px-40 text-center h1 font-monospace">Do produtor para sua casa!!!!</div>
+                <div class="col-mb-6 col-4">
+                    <img src="./img/index/entregador.png" class="img-fluid" alt="foto de um motoboy"
+                        style="width: 200px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 " id="staticBackdropLabel">Carrinho</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--  Js do Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"
         integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js">
+    </script>
 
 </body>
 
