@@ -30,6 +30,11 @@
     height: 80vh !important;
 }
 
+.bandeira {
+    top: -65px !important;
+    right: -15px !important;
+}
+
 .selo {
     bottom: -50px !important;
     left: -40px !important;
@@ -50,7 +55,7 @@
     text-shadow: 3px 5px 5px grey;
 }
 
-.pizza-menu:hover{
+.pizza-menu:hover {
     background-color: white;
     box-shadow: var(--bs-box-shadow) !important;
 }
@@ -65,7 +70,11 @@
 
 .shadow-verde {
     box-shadow: 1px 5px 8px rgba(0, 128, 0, 0.7)
-    /* Verde */
+        /* Verde */
+}
+.shadow-verde1:hover {
+    box-shadow: 1px 5px 8px rgba(0, 128, 0, 0.7)
+        /* Verde */
 }
 
 .shadow-vermelho {
@@ -78,10 +87,10 @@
     /* Cinza suave */
 }
 
-.img-pizza{
+.img-pizza {
     filter: grayscale(100%);
 }
 
-.img-pizza:hover{
+.img-pizza:hover {
     filter: grayscale(0);
 }

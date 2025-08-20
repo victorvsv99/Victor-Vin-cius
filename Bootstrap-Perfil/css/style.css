@@ -1,0 +1,20 @@
+.botao-menu:hover {
+    opacity: 0.6;
+}
+
+#painel {
+    min-height: 100vh;
+}
+
+@media (max-width:767.98px) {
+    #painel {
+        min-height: auto;
+    }
+}
+
+.bg-main {
+    background-image: url(../img/AdobeStock_759770655.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

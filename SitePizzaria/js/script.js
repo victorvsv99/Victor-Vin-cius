@@ -2,9 +2,13 @@ window.addEventListener('scroll', function () {
     const posicao = window.scrollY;
     console.log(posicao);
     if (posicao > 100) {
-        document.getElementById("navbar").classList.add("bg-body-tertiary");
+        // document.getElementById("navbar").classList.add("bg-body-tertiary")
+        alfa = ((posicao>=300)?1:(posicao - 100) / 200);
+        console.log(alfa);
+        this.document.getElementById("navbar").style.backgroundColor = "rgba(30, 150, 30, " + alfa + ")";
     }
     else {
-        document.getElementById("navbar").classList.remove("bg-body-tertiary");
+        this.document.getElementById("navbar").style.backgroundColor = "rgba(30, 150, 30,)";
     }
+   
 });
